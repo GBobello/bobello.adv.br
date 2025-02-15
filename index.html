@@ -26,7 +26,26 @@
 </head>
 
 <body>
+  <div id="formModal" class="modal">
+    <div class="modal-content">
+      <!-- <h2>Preencha o Formulário</h2> -->
 
+      <form id="leadForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <span style="font-size: 0.7rem; color: #7e7e7e;">Preencha as informações para acessar o site.</span>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
   <!-- HEADER -->
   <header id="header">
     <nav>
@@ -51,7 +70,8 @@
       <ion-icon name="close-outline" class="icon-close toggle"></ion-icon>
     </nav>
   </header>
-  <main>
+
+  <main id="main">
     <div class="hero-img">
       <!-- <img class="img-hero blue" src="img/cabeçalho.png" alt=""> -->
       <p class="hero-text">
@@ -303,7 +323,8 @@
 
 
   <!-- ICONS -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>4
+  <script src="./script.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 

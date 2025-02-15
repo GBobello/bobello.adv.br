@@ -15,6 +15,94 @@
   --font-family: "DM Sans", sans-serif;
 }
 
+.open-modal-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+/* Adiciona blur quando o modal estiver ativo */
+.blur {
+  filter: blur(5px);
+  pointer-events: none; /* Impede cliques no fundo */
+}
+
+/* Modal (inicialmente oculto) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Conteúdo do Modal */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão de Fechar */
+.close-btn {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
+}
+
+/* Formulário */
+.modal-content h2 {
+  margin-bottom: 10px;
+}
+
+.modal-content label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+  .modal-content {
+    width: 90%;
+  }
+}
+
 /*====== RESET STYLES */
 
 * {
